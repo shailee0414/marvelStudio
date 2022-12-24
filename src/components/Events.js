@@ -10,7 +10,6 @@ const Events = () => {
   useEffect(() => {
     dispatch(fetchEvents(10,0,null,null));
   }, []);
-  console.log("events", data);
   const RenderList = () => {
     return data.slice(0,6)?.map((item, index) => {
       return (

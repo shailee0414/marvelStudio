@@ -10,7 +10,7 @@ const CreatorNameList = ({ letter, input }) => {
   const [filter, setFilter] = useState();
   useEffect(() => {
     if (letter != null) {
-      dispatch(fetchCreatorsByLetter(50, 0, null, letter, letter));
+      dispatch(fetchCreatorsByLetter(20, 0, null, letter, letter));
     }
   }, [letter]);
   useEffect(() => {

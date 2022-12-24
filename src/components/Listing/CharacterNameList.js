@@ -10,7 +10,7 @@ const CharacterNameList = ({ letter, input }) => {
   const [filter, setFilter] = useState();
   useEffect(() => {
     if (letter != null) {
-      dispatch(fetchCharactersByLetter(50, 0,null,null, letter));
+      dispatch(fetchCharactersByLetter(20, 0,null,letter, null));
     }
   }, [letter]);
   useEffect(() => {
