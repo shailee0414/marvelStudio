@@ -18,7 +18,6 @@ const CharacterNameList = ({ letter, input }) => {
       setFilter(data);
     }
   }, [data]);
-  console.log(data);
   useEffect(() => {
     if (input != "") {
       const arr = data?.filter((item) =>

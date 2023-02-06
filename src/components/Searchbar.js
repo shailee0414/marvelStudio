@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Searchbar = ({ onChangeText, text }) => {
-  console.log(text);
   return (
     <div style={{ marginTop: "3em", marginBottom: "1em" }}>
       <div className="ui fluid massive transparent left icon input" style={{ backgroundColor:"#EEF1FF",padding:"0.4em"}}>

@@ -12,7 +12,6 @@ const Carousels = () => {
   useEffect(() => {
     dispatch(fetchComics(6,0,"thisWeek",null));
   }, []);
-  console.log(data)
   return (
     <Carousel navButtonsAlwaysVisible={false} cycleNavigation={true} animation="slide"duration={600} >
       {data.slice(0,6)?.map((item, i) => (

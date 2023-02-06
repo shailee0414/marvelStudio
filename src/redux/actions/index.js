@@ -86,7 +86,6 @@ export const fetchCharacters =
       dateDescriptor,
       nameStartsWith
     ).get("/characters");
-    console.log("mm", response?.data?.data?.results);
     dispatch({
       type: "FETCH_CHARACTERS",
       payload: response?.data?.data?.results,

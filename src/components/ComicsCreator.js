@@ -14,7 +14,6 @@ const ComicsCreators = () => {
   useEffect(() => {
     dispatch(fetchCreators(20,0,null,null));
   }, []);
-  console.log("ss",data)
   const onChangeText=(text)=>{
     setText(text)
   }
